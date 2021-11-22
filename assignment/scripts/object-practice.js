@@ -59,4 +59,5 @@ console.log(me.shoeCount)
 me.favoriteColor = 'Blue';
 //I tried using me.favoriteColor += 'Blue' thinking that's what the
 //prompt was getting at and it logged undefinedBlue.
-console.log(me.favoriteColor);
+//console.log(me.favoriteColor);
+console.log(me)
