@@ -10,6 +10,11 @@ console.log('***** Object Practice *****')
 */
 const me = {
   // TODO - add properties here
+  firstName: 'Aaron',
+  lastName: 'Rogers',
+  hasSiblings: true,
+  shoeCount: 8,
+  favThreeFoods: ['Pizza', 'Sushi', 'Burgers']
 };
 console.log('A little about me:', me);
 
@@ -20,14 +25,18 @@ console.log('A little about me:', me);
   - Console.log fullName
 */
 
-
+let fullName = `${me.firstName} ${me.lastName}`;
+console.log(fullName);
 
 /* 3. Nested arrays
   - Console.log your first favorite food
   - Console.log your last favorite food 
 */
 
-
+console.log(me.favThreeFoods[0])
+console.log(me.favThreeFoods.slice(-1))
+//console.log(me.favThreeFoods[2])
+//How could I do this on one line? Is there even reason to?
 
 /* 4. Change a property of an existing object.
   - Console.log your current shoe count.
@@ -36,6 +45,9 @@ console.log('A little about me:', me);
   - Console.log your updated shoe count. 
 */
 
+console.log(me.shoeCount)
+me.shoeCount += 1
+console.log(me.shoeCount)
 
 /* 5. Add a new property to an existing object.
   - Add a 'favoriteColor' to your existing object
@@ -43,3 +55,8 @@ console.log('A little about me:', me);
   - Cool huh? It works, even though it wasn't there before
   - Console.log your object
 */
+
+me.favoriteColor = 'Blue';
+//I tried using me.favoriteColor += 'Blue' thinking that's what the
+//prompt was getting at and it logged undefinedBlue.
+console.log(me.favoriteColor);
